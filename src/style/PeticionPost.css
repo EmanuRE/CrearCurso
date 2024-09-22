@@ -1,0 +1,94 @@
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  background-color: rgb(252, 251, 251); /* Fondo blanco */
+  padding-top: 20px; /* Reducir el espacio superior */
+}
+
+form {
+  background-color: rgb(253, 251, 251); /* Fondo blanco */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px; /* Aumentar el ancho del formulario */
+}
+
+h1 {
+  color: black; /* Letras de color negro */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  color: black; /* Letras de color negro */
+  display: inline-block;
+  margin-right: 10px;
+  width: 120px; /* Ancho fijo para alinear las etiquetas */
+}
+
+input {
+  width: calc(100% - 130px); /* Ajustar el ancho del input */
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px; /* Espacio entre botones */
+}
+
+button:last-child {
+  margin-right: 0; /* Quitar margen al último botón */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button[type="button"] {
+  background-color: #6c757d;
+}
+
+button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+/* Alinear los botones en una sola línea */
+form div:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  color: black;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Contenedor de cada campo del formulario */
+.field-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+
+input[name="descripcion"] {
+  width: calc(100% - 130px); /* Ajustar el ancho */
+  height: 100px; /* Aumentar la altura para la caja de Descripción */
+  resize: none; /* Evitar que se pueda redimensionar */
+}
+
